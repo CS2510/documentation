@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Introduction to Game Programming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" rel="icon"
+    type="image/x-icon" /><!--tiny.cc/emptyimage-->
+  <style>
+    html,body{
+      margin:0;
+      height:100%;
+      background-color:magenta;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      height:100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='app' style="height:100%">
+    <div class="flex-container">
+      <div style="flex-basis:100px; background-color: purple;">
+        
+      </div>
+      <div style="flex-basis:100px; background-color:white">2</div>
+      <div style="flex-grow:1; background-color: purple">3</div>
+    </div>
+  </div>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+
+  <script>
+
+    const app = new Vue({
+      el: '#app',
+      data: {
+        rows: [
+          {
+            name: "One"
+          },
+          {
+            name: "Two"
+          }
+        ],
+      },
+      methods: {
+
+      },
+    });
+
+  </script>
+</body>
+
+</html>
